@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+    <meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
+		<title>CAIR</title>
+		<link rel = "stylesheet" type = "text/css" href ="CAIRstyle.css" media = "screen"/>
+		<link rel = "shortcut icon" type="image/x-icon"  href="CAIR.ico" />
+</head>
+<body>
+  <header id = "site_head">
+		<div class = "header_cont">
+		<a href="CAIR Homepage.html"><img src ="cair_logo.png">  </a>
+		<nav class = "head_nav">
+		<ul>
+        <div class="navbar">
+            <a href="CAIR Homepage.html">Home</a> 
+            <div class="dropdown">
+                <button class="dropbtn"> <li> Members </li> <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="People.html">People</a>
+                  <a href="Nodes.html">Node</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"> Research <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="publication.html">Publication</a>
+                  <a href="upload.html">Research Output</a>
+                  <a href="#">Generate Report</a>
+                </div>
+           
+  </ul>
+	</nav>
+	</div>
+  </header>
+	
+	<div id="main_content">
+		<section id ="everything">
+
+			<div class = "container">
+				<form id =researchOutputForm>
+				  <div class="row">
+      <div class="col-25">
+        <label for=author>Author(s): </label>
+      </div>
+      <div class="col-75">
+        <input id =author name =authorname type =text required autofocus>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for=title>Title: </label>
+      </div>
+      <div class="col-75">
+        <input id=title name=tile type=text required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for=year>Year Of Publication: </label>
+      </div>
+      <div class="col-75">
+        <input id=year name=year type=text required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for=type>Type of Research Output Form: </label>
+      </div>
+      <div class="col-75">
+        <select id="type" name="type">
+          <option value="Journal paper">Journal paper</option>
+          <option value="Book">Book</option>
+          <option value="Book Chapter">Book Chapter</option>
+          <option value="Conference Paper">Conference Paper</option>
+          <option value="Workshop paper">Workshop paper</option>
+          <option value="Technical Report">Technical Report</option>
+          <option value="Thesis">Thesis</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for=add>Additional Information: </label>
+      </div>
+      <div class="col-75">
+        <textarea id=add name=add style ="height:200px"></textarea>
+      </div>
+    </div>
+        <div class="row">
+      <div class="col-25">
+        <label for=review>Peer-Reviewed: </label>
+      </div>
+       <div class="col-25">
+        <input type="radio" name="review" id = 1 checked="">False
+        <input type="radio" name="review" id = 2 disabled="True">True
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Create new research form" onclick="confirmUpload()">
+    </div>
+				</form>
+			</div>
+		</section>
+		<footer class = "bottom">
+		<p>site design © 2018 Diya Seeburrun</p>
+		</footer>
+	</div>
+	
+	<script src="script.js"></script>
+	<script>disableRadioButton()</script>
+</body>
+</html>

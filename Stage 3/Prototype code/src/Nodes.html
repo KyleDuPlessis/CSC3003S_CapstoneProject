@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+    <meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
+		<title>CAIR</title>
+		<link rel = "stylesheet" type = "text/css" href ="CAIRstyle.css" media = "screen"/>
+		<link rel = "shortcut icon" type="image/x-icon"  href="CAIR.ico" />
+</head>
+
+<body>
+  
+  <header id = "site_head">
+		<div class = "header_cont">
+		<a href="CAIR Homepage.html"><img src ="cair_logo.png" alt = "logo">  </a>
+		<nav class = "head_nav">
+		<ul>
+        <div class="navbar">
+            <a href="CAIR Homepage.html">Home</a> 
+            
+            <div class="dropdown">
+                <button class="dropbtn"> <li> Members </li> <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="People.html">People</a>
+                  <a href="Nodes.html">Node</a>
+                </div>
+            </div> 
+            
+            <div class="dropdown">
+                <button class="dropbtn"> Research <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="publication.html">Publication</a>
+                  <a href="upload.html">Research Output</a>
+                  <a href="#">Generate Report</a>
+                </div>
+            </div> 
+      
+            
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Member Login</button>
+
+                    <div id="id01" class="modal">
+                      
+                      <form class="modal-content animate" action="/action_page.php">
+                        
+                    
+                        <div class="container">
+                          <label for="uname"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                          <button type="submit">Login</button>
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  
+                        </div>
+                      </form>
+                    </div>
+                    
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    </script>
+
+        </div>
+  </ul>
+	</nav>
+	</div>
+</header>
+
+	
+	<div id="main_content">
+		<section id ="everything">
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="ukLogo.png" alt="UKN logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Adaptive and Cognitive Systems Lab</h2>
+            <p>The Adaptive and Cognitive Systems Lab investigates architectures and frameworks for self-learning cognitive systems that are able to adapt to an evolving environment.<b> <a href="publication.html"> read more... </a></b></p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="uctlogo.jpg" alt="UCT logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Knowledge Representation and Reasoning</h2>
+            <p>KRR is a research group within the Meraka Institute at the CSIR focusing on modelling and reasoning with formal ontologies based on description logics.<b> <a href="publication.html"> read more... </a></b></p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="sulogo.jpg" alt="SU logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Knowledge Acquisition</h2>
+            <p>Knowledge Acquisition entails a range of techniques used to obtain domain knowledge. The CAIR node at Stellenbosch University conducts research in Knowledge Acquisition as it relates to Artificial Intelligence.<b> <a href="publication.html"> read more... </a></b></p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="nwu_logo.jpg" alt="NWU logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Multilingual Speech Technologies</h2>
+            <p><b> <a href="publication.html"> read more... </a></b></p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="uplogo.jpg" alt="Up logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Knowledge Representation and Reasoning</h2>
+            <p>Members of the Philosophy node of CAIR at UP (PHIL@CAIR-UP) conduct research in the broad context of Knowledge Representation and Reasoning in the fields of:<b> <a href="publication.html"> read more... </a></b></p>
+  	    </div>
+  	  </div>
+		</section>
+		<footer class = "bottom">
+		<p>site design © 2018 CBIB</p>
+		</footer>
+	</div>
+	
+
+</body>
+</html>

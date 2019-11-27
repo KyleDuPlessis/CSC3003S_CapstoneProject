@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+    <meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
+		<title>CAIR</title>
+		<link rel = "stylesheet" type = "text/css" href ="CAIRstyle.css" media = "screen"/>
+		<link rel = "shortcut icon" type="image/x-icon"  href="CAIR.ico" />
+</head>
+
+<body>
+  
+  <header id = "site_head">
+		<div class = "header_cont">
+		<a href="CAIR Homepage.html"><img src ="cair_logo.png" alt = "logo">  </a>
+		<nav class = "head_nav">
+		<ul>
+        <div class="navbar">
+            <a href="CAIR Homepage.html">Home</a> 
+            
+            <div class="dropdown">
+                <button class="dropbtn"> <li> Members </li> <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="People.html">People</a>
+                  <a href="Nodes.html">Node</a>
+                </div>
+            </div> 
+            
+            <div class="dropdown">
+                <button class="dropbtn"> Research <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="publication.html">Publication</a>
+                  <a href="upload.html">Research Output</a>
+                  <a href="#">Generate Report</a>
+                </div>
+            </div> 
+      
+            
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Member Login</button>
+
+                    <div id="id01" class="modal">
+                      
+                      <form class="modal-content animate" action="/action_page.php">
+                        
+                    
+                        <div class="container">
+                          <label for="uname"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                          <button type="submit">Login</button>
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  
+                        </div>
+                      </form>
+                    </div>
+                    
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    </script>
+
+        </div>
+  </ul>
+	</nav>
+	</div>
+</header>
+
+	
+	<div id="main_content">
+		<section id ="everything">
+		<div id="main_content">
+		<section id ="everything">
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="tommie.jpg" alt="UKN logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Tommie Meyer</h2>
+            <p>Research group: Knowledge Representation and Reasoning<br /> Location: UCT</p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="aurora.jpg" alt="UCT logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Aurona Gerber</h2>
+            <p>Research group: Applied Data Science<br /> Location: Up</p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="arina.jpg" alt="SU logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Arina Britz</h2>
+            <p>Research group: Knowledge Acquisition<br /> Location: Stellenbosch University</p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="deshen.jpg" alt="NWU logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Deshen Moodley</h2>
+            <p>Research group: Adaptive and Cognitive Systems Lab<br /> Location: UCT</p>
+  	    </div>
+  	  </div>
+  	  <div class = "pageItem">
+  	    <div class = "imgSection">
+  	      <img src ="etienne.png" alt="Up logo"  style = "width: 150px">
+  	    </div>
+  	    <div class = "textSection">
+  	      <h2>Prof. Etienne Barnard</h2>
+            <p>Research group: Multilingual Speech Technologies<br /> Location: NWU</p>
+  	    </div>
+  	  </div>
+
+		</section>
+		<footer class = "bottom">
+		<p>site design © 2018 CBIB</p>
+		</footer>
+	</div>
+	
+
+</body>
+</html>

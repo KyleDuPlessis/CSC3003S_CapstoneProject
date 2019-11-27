@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+    <meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
+		<title>CAIR</title>
+		<link rel = "stylesheet" type = "text/css" href ="CAIRstyle.css" media = "screen"/>
+		<link rel = "shortcut icon" type="image/x-icon"  href="CAIR.ico" />
+</head>
+
+<body>
+  
+  <header id = "site_head">
+		<div class = "header_cont">
+		<a href="CAIR Homepage.html"><img src ="cair_logo.png">  </a>
+		<nav class = "head_nav">
+		<ul>
+        <div class="navbar">
+            <a href="CAIR Homepage.html">Home</a> 
+            
+            <div class="dropdown">
+                <button class="dropbtn"> <li> Members </li> <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="People.html">People</a>
+                  <a href="Nodes.html">Node</a>
+                </div>
+            </div> 
+            
+            <div class="dropdown">
+                <button class="dropbtn"> Research <i class="fa fa-caret-down"> </i> </button>
+                <div class="dropdown-content">
+                  <a href="publication.html">Publication</a>
+                  <a href="upload.html">Research Output</a>
+                  <a href="#">Generate Report</a>
+                </div>
+            </div> 
+      
+            
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Member Login</button>
+
+                    <div id="id01" class="modal">
+                      
+                      <form class="modal-content animate" action="/action_page.php">
+                        
+                    
+                        <div class="container">
+                          <label for="uname"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                          <button type="submit">Login</button>
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  
+                        </div>
+                      </form>
+                    </div>
+                    
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    </script>
+
+        </div>
+  </ul>
+	</nav>
+	</div>
+</header>
+
+	
+	<div id="main_content">
+	<section id ="everything">
+	  
+			<div class = "everything_left">
+				<h3> About</h3>
+				<p class ="about">The Centre for Artificial Intelligence Research (CAIR) is a South African distributed Centre of Excellence that conducts foundational, directed and applied research into various aspects of Artificial Intelligence. CAIR has nodes at five South African universities: the University of Cape Town, University of KwaZulu-Natal, North-West University, University of Pretoria and Stellenbosch University, and is coordinated and managed by the Meraka Institute at the Council for Scientific and Industrial Research. <b> <a href="CAIR Homepage.html">read more... </a></b></p>
+				
+			
+				
+				<h3>Latest Publication</h3>
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <a href = publication.html><h2>The Role of Theory in Computer Science (2017)</h2></a>
+            <p>Bruce WatsonStrauss, T. , Kourie, D.G. , Cleophas, L.G.W.A. : CSP for Parallelising Brzozowski’s DFA Construction Algorithm. In: The Role of Theory in Computer Science. pp. 217-243. World Scientific Publishing Co. Pte. Ltd. (2017)</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <a href = publication.html><h2>Advances in Enterprise Engineering(2015)</h2></a>
+            <p>De Vries M , Aurona Gerber , Van der Merwe A : The enterprise engineering domain. In: Advances in Enterprise Engineering IX. pp. -. Springer (2015) <br />
+Emma Ruttkamp-Bloem , Giovanni Casini , Tommie Meyer : A Non-Classical Logical Foundation for Naturalised Realism. In: Logica Yearbook 2014. pp. -. (2015)</p>
+          </div>
+          <div class="column" style="background-color:#ccc;">
+            <a href = publication.html><h2>Frontiers in Artificial Intelligence and Applications(2014)</h2></a>
+            <p>Aurona Gerber , Eardley, C. , Nishal Morar : An Ontology-based Key for Afrotropical Bees. In: Frontiers in Artificial Intelligence and Applications. pp. 277-288. IOS Press (2014) </p>
+          </div>
+        </div>
+          
+				<h3> Research Categories </h3>
+          <div id="menu-outer">
+            <div class="table">
+              <ul id="horizontal-list">
+          			<li> <img src = "engineering.png"/></li>
+          			<li> <img src = "health.jpeg"/></li>
+          			<li> <img src = "tech.jpeg"/></li>
+          			<li> <img src = "humanities.jpeg"/></li>
+        		 </ul>
+            </div>
+          </div>
+          
+			</div>
+			
+		
+ </section>
+ 	
+ </div>
+	
+
+</body>
+</html>
