@@ -7,7 +7,7 @@ In the second semester of their third year all students majoring in computer sci
 
 Project selected:
 ----
-A tool for managing research outputs - CBIB (Prof. Tommie Meyer <tmeyer@cs.uct.ac.za>)
+A tool for managing research outputs - CBIB (Prof. Tommie Meyer <tmeyer@cs.uct.ac.za>).
 The Centre for Artificial Intelligence Research (CAIR) is a virtual centre, hosted at the Council for Scientific and Industrial Research (CSIR), and with nodes at a number of South African universities. The goal of this project is to create a web-based tool for managing the research outputs produced by CAIR members. The tool should enable users to:
 - add, modify, and delete entries corresponding to research outputs;
 - search entries based on various criteria;
